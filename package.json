@@ -1,0 +1,29 @@
+{
+  "name": "adolf",
+  "version": "1.0.0",
+  "description": "Adolf is a multi task Discord bot",
+  "main": "bot.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules package-lock.json",
+    "dev": "tsc-watch --onSuccess \"node ./dist/start.js\"",
+    "build": "tsc -p tsconfig.json",
+    "rebuild": "npm run clean && npm run build",
+    "start": "node ./dist/start.js"
+  },
+  "author": "Scttpr",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.6",
+    "@types/ws": "^7.2.4",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "tsc-watch": "^4.2.8",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}

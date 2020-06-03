@@ -1,0 +1,55 @@
+parser: "@typescript-eslint/parser"
+
+plugins:
+  - "@typescript-eslint"
+
+extends:
+  - airbnb-base
+  - plugin:@typescript-eslint/recommended
+
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+
+rules:
+  # import/no-unresolved: off
+
+  # arrow-body-style:
+  #   - error
+  #   - as-needed
+  #   - requireReturnForObjectLiteral: false
+  # arrow-parens:
+  #   - error
+  #   - as-needed
+  # class-methods-use-this: off
+  # curly:
+  #   - error
+  #   - multi-line
+  #   - consistent
+  # no-console:
+  #   - error
+  #   - allow:
+  #     - info
+  #     - error
+  # no-else-return:
+  #   - error
+  #   - allowElseIf: false
+  # no-multi-spaces:
+  #   - error
+  #   - ignoreEOLComments: true
+  # radix: off
+
+# @typescript-eslint
+  # Does not work with class fields :(
+  # lines-between-class-members:
+  #   - error
+  #   - always
+  #   - exceptAfterSingleLine: true
+  # "@typescript-eslint/explicit-function-return-type": off
+  # "@typescript-eslint/explicit-member-accessibility": off
+  # "@typescript-eslint/indent": off
+  # "@typescript-eslint/no-non-null-assertion": off
+  # "@typescript-eslint/no-object-literal-type-assertion": off
+
+# Custom rules
+  prefer-early-return: error
